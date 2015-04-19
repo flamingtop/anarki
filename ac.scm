@@ -1015,7 +1015,7 @@
       (lambda (var val thunk)
         (parameterize ((var val)) (thunk))))
 
-(xdef open-socket 
+(xdef open-socket
       (lambda (port)
         (if (pair? port)
             (tcp-listen (cadr port) 50 #t (car port))
@@ -1203,7 +1203,15 @@
 (define (tl)
   (let ((interactive? (terminal-port? (current-input-port))))
     (when interactive?
-      (display "Use (quit) or ^D to quit, (tl) to return here after an interrupt, (help _sym_) for docs and examples.\n"))
+      (display
+"
+Type (quit) or ^D to quit,
+(help _sym_) for docs and examples,
+(incompatibilities) for a list of difference with arc 3.1.
+
+If you have questions or get stuck, come to http://arclanguage.com/forum.
+Arc 3.1 documentation: https://arclanguage.github.io/ref.
+"))
     (tl2 interactive?)))
 
 (define (tl2 interactive?)

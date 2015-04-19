@@ -21,6 +21,15 @@
 ;  not sure this is a mistake; strings may be subtly different from
 ;  lists of chars
 
+(assign incompatibilities (fn () (disp
+"The following behave differently from arc 3.1:
+
+1. `for`. See (help for).
+2. Templates (arc's lightweight object database system). See (help deftem).
+
+If you find others, please report them at http://arclanguage.org/forum.
+")))
+
 (assign current-load-file* "arc.arc")
 (assign source-file* (table))
 (assign source* (table))
@@ -913,13 +922,20 @@ See [[atomic]]."
 (mac for (var init test update . body)
 "Loops through expressions in 'body' as long as 'test' passes, first binding 'var' to 'init'. At the end of each iteration it runs 'update', which usually will modify 'var'.
 Can also be terminated from inside 'body' by calling '(break)', or interrupt a single iteration by calling '(continue)'.
-If you nest multiple loops with different 'var's like i and j, you can break
-out of either of them by calling (break-i), (break-j), etc."
+If you nest multiple loops with different 'var's like i and j, you can break out of either of them by calling (break-i), (break-j), etc.
+Always returns nil.
+
+Incompatibility alert: 'for' is different in anarki from vanilla arc. To get vanilla arc's behavior, use [[up]]. For more information, see CHANGES/for."
+  ; simple heuristic to alert on the incompatibility at call time. If you need
+  ; to check a flag variable you should probably be using 'while' anyway.
+  (unless (acons test)
+    (err "`for` has changed in anarki. See (help for) for more information."))
   `(point break
      (let ,(sym:string "break-" var) break
        (loop (,var ,init)
           (when ,test
-            (do1 (point continue
+            (do1 nil
+                 (point continue
                    (let ,(sym:string "continue-" var) continue
                      ,@body))
                  ,update
