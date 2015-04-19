@@ -608,7 +608,7 @@ function vote(node) {
     (when user
       (toplink "threads" (threads-url user) label))
     (toplink "comments" "newcomments" label)
-    (toplink "leaders"  "leaders"     label)
+    ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
     (link "submit")
     (unless (mem label toplabels*)
@@ -628,7 +628,7 @@ function vote(node) {
       (when-umatch/r user req
         (logout-user user)
         whence))
-    (onlink "login"
+    (onlink "login/register"
       (login-page nil
                   (list (fn (u ip)
                           (ensure-news-user u)
