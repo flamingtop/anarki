@@ -1,12 +1,15 @@
+
+; see http://poqbod.com/2014/11/01/install-hacker-news-on-ubuntu.html
+
 ; things to customize
 (declare 'atstrings t)
 
-(= this-site*    "My Forum"
-   site-url*     "http://news.yourdomain.com/"
-   parent-url*   "http://www.yourdomain.com"
+(= this-site*    "古国新闻"
+   site-url*     "http://news.warmgogo.com/"
+   parent-url*   "http://www.warmgogo.com"
    favicon-url*  ""
-   site-desc*    "What this site is about."               ; for rss feed
-   site-color*   (color 180 180 180)
+   site-desc*    ""               ; for rss feed
+   site-color*   (color 214 236 240)
    border-color* (color 180 180 180)
    prefer-url*   t)
 
@@ -492,7 +495,7 @@ a:visited { color:#828282; text-decoration:none; }
 .comment a:link, .comment a:visited { text-decoration:underline;}
 .dead a:link, .dead a:visited { color:#dddddd; }
 .pagetop a:visited { color:#000000;}
-.topsel a:link, .topsel a:visited { color:#ffffff; }
+.topsel a:link, .topsel a:visited { text-decoration:underline; }
 
 .subtext a:link, .subtext a:visited { color:#828282; }
 .subtext a:hover { text-decoration:underline; }
@@ -559,7 +562,7 @@ function vote(node) {
 
 ; Page top
 
-(= sand (color 246 246 239) textgray (gray 130))
+(= sand (color 255 255 255) textgray (gray 130))
 
 (def main-color (user)
   (aif (and user (uvar user topcolor))
@@ -587,10 +590,11 @@ function vote(node) {
   (spacerow 10))
 
 (def gen-logo ()
-  (tag (td style "width:18px;padding-right:4px")
-    (tag (a href parent-url*)
-      (tag (img src logo-url* width 18 height 18
-                style "border:1px #@(hexrep border-color*) solid;")))))
+  ())
+  ; (tag (td style "width:18px;padding-right:4px")
+  ;   (tag (a href parent-url*)
+  ;     (tag (img src logo-url* width 18 height 18
+  ;               style "border:1px #@(hexrep border-color*) solid;")))))
 
 (= toplabels* '(nil "welcome" "new" "threads" "comments" "leaders" "*"))
 
@@ -1010,7 +1014,7 @@ function vote(node) {
 
 (def titlelink (s url user)
   (let toself (blank url)
-    (tag (a href (if toself
+    (tag (a target "_blank" href (if toself
                       (item-url s!id)
                      (or (live s) (author user s) (editor user))
                       url)

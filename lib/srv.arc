@@ -221,7 +221,7 @@
     (++ (spurned* ip 0))))
 
 (def abusive-core (ip)
-  (and (only.> (requests/ip* ip) 250)
+  (and (only.> (requests/ip* ip) 1000)
        (let now (seconds)
          (do1 (if (req-times* ip)
                 (and (>= (len req-times*.ip)
