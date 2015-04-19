@@ -602,8 +602,8 @@ function vote(node) {
 
 (def toprow (user label)
   (w/bars
-    (when (noob user)
-      (toplink "welcome" welcome-url* label))
+    ;(when (noob user)
+    ;  (toplink "welcome" welcome-url* label))
     (toplink "new" "newest" label)
     (when user
       (toplink "threads" (threads-url user) label))
