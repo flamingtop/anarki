@@ -4,7 +4,7 @@
 ; things to customize
 (declare 'atstrings t)
 
-(= this-site*    "古国新闻"
+(= this-site*    "旧闻新闻"
    site-url*     "http://news.warmgogo.com/"
    parent-url*   "http://www.warmgogo.com"
    favicon-url*  ""
