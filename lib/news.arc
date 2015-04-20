@@ -485,11 +485,11 @@ a:visited { color:#666666; text-decoration:none; }
 
 .default { font-family:Verdana; font-size: 10pt; color:#000000; }
 .admin   { font-family:Verdana; font-size:8.5pt; color:#000000; }
-.title   { font-family:Verdana; font-size: 18pt; color:#000000; }
+.title   { font-family:Verdana; font-size: 15pt; color:#000000; }
 .adtitle { font-family:Verdana; font-size:  9pt; color:#828282; }
 .subtext { font-family:Verdana; font-size:  7pt; color:#828282; }
 .yclinks { font-family:Verdana; font-size:  8pt; color:#828282; }
-.pagetop { font-family:Verdana; font-size: 12pt; color:#000000; }
+.pagetop { font-family:Verdana; font-size: 11pt; color:#000000; }
 .comhead { font-family:Verdana; font-size:  8pt; color:#828282; }
 .comment { font-family:Verdana; font-size:  9pt; }
 .dead    { font-family:Verdana; font-size:  9pt; color:#dddddd; }
@@ -589,7 +589,7 @@ function vote(node) {
                (tag (td style "line-height:24pt; height:30px;")
                  (spanclass pagetop (prbold label))))))))
   (map [_ user] pagefns*)
-  (spacerow 10))
+  (spacerow 30))
 
 (def gen-logo ()
   ())
