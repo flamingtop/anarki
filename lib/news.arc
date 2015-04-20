@@ -9,8 +9,8 @@
    parent-url*   "http://www.warmgogo.com"
    favicon-url*  ""
    site-desc*    ""               ; for rss feed
-   site-color*   (color 214 236 240)
-   border-color* (color 180 180 180)
+   site-color*   (color 255 255 255)
+   border-color* (color 0 0 0)
    prefer-url*   t)
 
 ; these settings might improve performance when you need it
@@ -405,7 +405,9 @@
        (center
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
-           ,@body)))))
+           ,@body)
+
+         ))))
 
 (= pagefns* nil)
 
@@ -479,22 +481,22 @@ input[type=\"submit\"] { font-family:Verdana; }
 textarea { font-family:Courier; font-size:10pt; color:#000000; }
 
 a:link    { color:#000000; text-decoration:none; }
-a:visited { color:#828282; text-decoration:none; }
+a:visited { color:#666666; text-decoration:none; }
 
-.default { font-family:Verdana; font-size: 10pt; color:#828282; }
+.default { font-family:Verdana; font-size: 10pt; color:#000000; }
 .admin   { font-family:Verdana; font-size:8.5pt; color:#000000; }
-.title   { font-family:Verdana; font-size: 10pt; color:#828282; }
+.title   { font-family:Verdana; font-size: 18pt; color:#000000; }
 .adtitle { font-family:Verdana; font-size:  9pt; color:#828282; }
 .subtext { font-family:Verdana; font-size:  7pt; color:#828282; }
 .yclinks { font-family:Verdana; font-size:  8pt; color:#828282; }
-.pagetop { font-family:Verdana; font-size: 10pt; color:#222222; }
+.pagetop { font-family:Verdana; font-size: 12pt; color:#000000; }
 .comhead { font-family:Verdana; font-size:  8pt; color:#828282; }
 .comment { font-family:Verdana; font-size:  9pt; }
 .dead    { font-family:Verdana; font-size:  9pt; color:#dddddd; }
 
 .comment a:link, .comment a:visited { text-decoration:underline;}
 .dead a:link, .dead a:visited { color:#dddddd; }
-.pagetop a:visited { color:#000000;}
+.pagetop a:link, .pagetop a:visited { color:#000000; }
 .topsel a:link, .topsel a:visited { text-decoration:underline; }
 
 .subtext a:link, .subtext a:visited { color:#828282; }
@@ -576,7 +578,7 @@ function vote(node) {
                     style "padding:2px")
           (tr (gen-logo)
               (when (is switch 'full)
-                (tag (td style "line-height:12pt; height:10px;")
+                (tag (td style "line-height:24pt; height:30px;")
                   (spanclass pagetop
                     (tag b (link this-site* "news"))
                     (hspace 10)
@@ -584,7 +586,7 @@ function vote(node) {
              (if (is switch 'full)
                (tag (td style "text-align:right;padding-right:4px;")
                  (spanclass pagetop (topright user whence)))
-               (tag (td style "line-height:12pt; height:10px;")
+               (tag (td style "line-height:24pt; height:30px;")
                  (spanclass pagetop (prbold label))))))))
   (map [_ user] pagefns*)
   (spacerow 10))
@@ -628,7 +630,7 @@ function vote(node) {
       (when-umatch/r user req
         (logout-user user)
         whence))
-    (onlink "login/register"
+    (onlink "join"
       (login-page nil
                   (list (fn (u ip)
                           (ensure-news-user u)
@@ -935,7 +937,8 @@ function vote(node) {
     (let n start
       (each i (cut items start end)
         (display-item (and number (++ n)) i user whence t)
-        (spacerow (if (acomment i) 15 5))))
+        ; (spacerow (if (acomment i) 15 5))))
+        (spacerow 10)))
     (when end
       (let newend (+ end perpage*)
         (when (and (<= newend maxend*) (< end (len items)))
@@ -994,7 +997,7 @@ function vote(node) {
           (pdflink url)
           (awhen (sitename url)
             (spanclass comhead
-              (pr " (" )
+              (pr " " )
               (if (admin user)
                 (w/rlink (do (set-site-ban user
                                            it
@@ -1009,7 +1012,7 @@ function vote(node) {
                                               kill   darkblue))
                       (pr it))))
                 (pr it))
-              (pr ") "))))
+              (pr " "))))
       (pr (pseudo-text s)))))
 
 (def titlelink (s url user)
