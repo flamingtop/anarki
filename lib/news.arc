@@ -821,7 +821,7 @@ function vote(node) {
   <p>这个网站关注东方人世界的事。</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p><addr>contact@warmgogo.com</addr></p>
+  <p><addr>contact[at]warmgogo[dot]com</addr></p>
   "))
 
 
