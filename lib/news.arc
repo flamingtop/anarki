@@ -817,21 +817,11 @@ function vote(node) {
 
 (newsop about ()
   (pr "
-<iframe
-width=\"420\"
-height=\"315\"
-src=\"https://www.youtube.com/embed/YS0vkfZXZys\"
-frameborder=\"0\"
-allowfullscreen>
-</iframe>
-  <p>人有两种，有VPN的，没VPN的，你『应该』是前一种</p>
-  <p><a href=\"/\" rel=\"nofollow\">文明古国</a>欢迎你，</p>
-  <p>我是一个流落美洲的IT浪人</p>
-  <p>我想找到一个问题的答案</p>
-  <p>做一个现代中国人意味着什么。</p>
-  <p></p>
-  <p></p>
-  <p>邮箱：contact艾特warmgogo点com</p>
+  <p>来美国后，开始思考作为中国人的身份，和作为东方人的意义，来美国前从来没想过。</p>
+  <p>这个网站关注东方人世界的事。</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><addr>contact@warmgogo.com</addr></p>
   "))
 
 
