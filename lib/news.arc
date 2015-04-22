@@ -604,13 +604,13 @@ function vote(node) {
 
 (def toprow (user label)
   (w/bars
-    (toplink "about" "about" label)
     ; (when (noob user)
     ;  (toplink "welcome" welcome-url* label))
     (toplink "new" "newest" label)
     (when user
       (toplink "threads" (threads-url user) label))
     (toplink "comments" "newcomments" label)
+    (toplink "contact" "contact" label)
     ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
     (link "submit")
@@ -815,11 +815,8 @@ function vote(node) {
 (newsop welcome ()
   (pr "Welcome to " this-site* ", " user "!"))
 
-(newsop about ()
-  (pr "
-  <p>What it means to be a Chinese./p>
-  <p><addr>contact[at]warmgogo[dot]com</addr></p>
-  "))
+(newsop contact ()
+  (pr "contact[at]warmgogo[dot]com"))
 
 
 ; Main Operators
