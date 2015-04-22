@@ -604,8 +604,9 @@ function vote(node) {
 
 (def toprow (user label)
   (w/bars
-    (when (noob user)
-      (toplink "welcome" welcome-url* label))
+    (link "about" "about" label)
+    ; (when (noob user)
+    ;  (toplink "welcome" welcome-url* label))
     (toplink "new" "newest" label)
     (when user
       (toplink "threads" (threads-url user) label))
@@ -812,7 +813,9 @@ function vote(node) {
   (tostring (underlink "reset password" "resetpw")))
 
 (newsop welcome ()
-  ; (pr "Welcome to " this-site* ", " user "!"))
+  (pr "Welcome to " this-site* ", " user "!"))
+
+(newsop about ()
   (pr "
 <iframe
 width=\"420\"
@@ -826,7 +829,7 @@ allowfullscreen>
   <p>我叫至，流落美洲的IT浪人</p>
   <p>我想找到一个问题的答案：做一个现代中国人意味着什么</p>
   <p></p>
-  <p>加入我吧。</p>"))
+"))
 
 
 ; Main Operators
