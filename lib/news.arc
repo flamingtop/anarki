@@ -816,7 +816,7 @@ function vote(node) {
   (pr "Welcome to " this-site* ", " user "!"))
 
 (newsop about ()
-  (pr "contact[at]warmgogo[dot]com"))
+  (pr "contact at warmgogo dot com"))
 
 
 ; Main Operators
