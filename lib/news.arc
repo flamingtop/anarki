@@ -821,9 +821,9 @@ src=\"https://www.youtube.com/embed/YS0vkfZXZys\"
 frameborder=\"0\"
 allowfullscreen>
 </iframe>
-  <p><cite>人有两种，有VPN的和不用VPN的，你应该是后一种</cite></p>
+  <p><cite>人有两种，有VPN的，没VPN的，你应该是后一种</cite></p>
   <p><a href=\"/\" rel=\"nofollow\">文明古国</a>欢迎你，</p>
-  <p>我叫至，流落美洲的IT浪人；</p>
+  <p>我叫至，流落美洲的IT浪人</p>
   <p>我想找到一个问题的答案：做一个现代中国人意味着什么</p>
   <p></p>
   <p>加入我吧。</p>"))
