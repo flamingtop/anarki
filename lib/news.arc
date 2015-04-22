@@ -604,7 +604,7 @@ function vote(node) {
 
 (def toprow (user label)
   (w/bars
-    (link "about" "about" label)
+    (toplink "about" "about" label)
     ; (when (noob user)
     ;  (toplink "welcome" welcome-url* label))
     (toplink "new" "newest" label)
