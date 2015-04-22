@@ -817,10 +817,7 @@ function vote(node) {
 
 (newsop about ()
   (pr "
-  <p>来美国后，开始思考作为中国人的身份，和作为东方人的意义，来美国前从来没想过。</p>
-  <p>这个网站关注东方人世界的事。</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
+  <p>What it means to be a Chinese./p>
   <p><addr>contact[at]warmgogo[dot]com</addr></p>
   "))
 
