@@ -406,7 +406,11 @@
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
-
+         (pr "<div
+                style=\"display:none\">
+              <script
+                src=\"http://s4.cnzz.com/z_stat.php?id=1254861010&web_id=1254861010\"
+                language=\"JavaScript\"></script></div>")
          ))))
 
 (= pagefns* nil)
