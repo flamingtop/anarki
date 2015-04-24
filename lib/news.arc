@@ -463,7 +463,7 @@
 (def msgpage (user msg (o title))
   (minipage (or title "Message")
     (spanclass admin
-      (center (if (len> msg 80)
+      (center (if (len> msg 250)
                 (widtable 500 msg)
                 (pr msg))))
     (br2)))
