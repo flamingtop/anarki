@@ -463,7 +463,7 @@
 (def msgpage (user msg (o title))
   (minipage (or title "Message")
     (spanclass admin
-      (center (if (len> msg 250)
+      (center (if (len> msg 80)
                 (widtable 500 msg)
                 (pr msg))))
     (br2)))
@@ -1474,7 +1474,7 @@ function vote(node) {
     (submit-page user u t)
     (submit-login-warning u t)))
 
-(= title-limit* 80
+(= title-limit* 250
    retry*       "Please try again."
    toolong*     "Please make title < @title-limit* characters."
    bothblank*   "The url and text fields can't both be blank.  Please
