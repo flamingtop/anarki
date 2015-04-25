@@ -820,7 +820,15 @@ function vote(node) {
   (pr "Welcome to " this-site* ", " user "!"))
 
 (newsop about ()
-  (pr "contact at warmgogo dot com"))
+  (pr "
+    <center>
+    <pre>
+    What it means to be Chinese.
+
+    contact在warmgogo点com
+    </pre>
+    </center>
+    "))
 
 
 ; Main Operators
