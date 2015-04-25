@@ -824,7 +824,12 @@ function vote(node) {
     <center>
     <pre>
     What it means to be Chinese.
-
+    <div><iframe
+      width=\"640\"
+      height=\"480\"
+      src=\"https://www.youtube.com/embed/wyToB6fQJlQ?rel=0&amp;controls=0&amp;showinfo=0\"
+      frameborder=\"0\"
+      allowfullscreen></iframe></div>
     contact在warmgogo点com
     </pre>
     </center>
