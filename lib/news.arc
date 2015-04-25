@@ -1482,7 +1482,7 @@ function vote(node) {
     (submit-page user u t)
     (submit-login-warning u t)))
 
-(= title-limit* 80
+(= title-limit* 250
    retry*       "Please try again."
    toolong*     "Please make title < @title-limit* characters."
    bothblank*   "The url and text fields can't both be blank.  Please
