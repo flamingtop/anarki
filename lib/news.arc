@@ -489,7 +489,7 @@ a:visited { color:#666666; text-decoration:none; }
 
 .default { font-family:Verdana; font-size: 10pt; color:#000000; }
 .admin   { font-family:Verdana; font-size:8.5pt; color:#000000; }
-.title   { font-family:Verdana; font-size: 13pt; color:#000000; }
+.title   { font-family:Verdana; font-size: 13pt; }
 .adtitle { font-family:Verdana; font-size:  9pt; color:#828282; }
 .subtext { font-family:Verdana; font-size:  7pt; color:#828282; }
 .yclinks { font-family:Verdana; font-size:  8pt; color:#828282; }
