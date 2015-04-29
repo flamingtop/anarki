@@ -475,6 +475,10 @@
 (defop news.css req
   (pr "
 * { font-family: \"Lucida Grande\",\"Lucida Sans Unicode\",Helvetica,Arial,Verdana,sans-serif; }
+* {
+  font-family: \"Georgia\", \"Xin Gothic\", \"Hiragino Sans GB\", \"Droid Sans Fallback\", \"Microsoft YaHei\", sans-serif;
+  letter-spacing: 1px;
+}
 body  { font-size:10pt; color:#828282; }
 td    { font-size:10pt; color:#828282; }
 
