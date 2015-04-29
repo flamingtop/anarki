@@ -474,7 +474,7 @@
 
 (defop news.css req
   (pr "
-html { font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; }
+* { font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; }
 body  { font-size:10pt; color:#828282; }
 td    { font-size:10pt; color:#828282; }
 
