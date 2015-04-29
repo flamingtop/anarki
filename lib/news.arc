@@ -474,7 +474,7 @@
 
 (defop news.css req
   (pr "
-* { font-family:  "宋体","Arial",sans-serif; }
+html { font-family: "宋体", "Arial", sans-serif; }
 body  { font-size:10pt; color:#828282; }
 td    { font-size:10pt; color:#828282; }
 
