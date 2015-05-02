@@ -612,8 +612,8 @@ function vote(node) {
     ; (when (noob user)
     ;  (toplink "welcome" welcome-url* label))
     (toplink "new" "newest" label)
-    (when user
-      (toplink "threads" (threads-url user) label))
+    ;(when user
+    ;  (toplink "threads" (threads-url user) label))
     (toplink "comments" "newcomments" label)
     ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
