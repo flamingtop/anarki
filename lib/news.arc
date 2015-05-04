@@ -622,7 +622,7 @@ function vote(node) {
     (toplink "评论" "newcomments" label)
     ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
-    (link "提交")
+    (link "提交" "submit")
     (unless (mem label toplabels*)
       (fontcolor white (pr label)))))
 
@@ -826,13 +826,19 @@ function vote(node) {
 
 (newsop about ()
   (pr "
-    <br />
-    <br />
+    <div
+      style=\"
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              text-align: center;
+              font-family: Courier, serif;
+            \">
     <center>
-    <pre>
-    contact@warmgogo.com
-    </pre>
+    <h3>Being Chinese.</h3>
+    <p>contact[at]warmgogo.com</p>
     </center>
+    </div>
     "))
 
 
