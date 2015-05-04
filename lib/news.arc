@@ -616,10 +616,10 @@ function vote(node) {
     (toplink "关于" "about" label)
     ; (when (noob user)
     ;  (toplink "welcome" welcome-url* label))
-    (toplink "最近的" "newest" label)
+    (toplink "最近" "newest" (if (is label "new") "最近" label))
     ;(when user
     ;  (toplink "threads" (threads-url user) label))
-    (toplink "评论" "newcomments" label)
+    (toplink "评论" "newcomments" (if (is label "comments") "评论" label))
     ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
     (link "提交" "submit")
