@@ -613,16 +613,16 @@ function vote(node) {
 
 (def toprow (user label)
   (w/bars
-    (toplink "about" "about" label)
+    (toplink "关于" "about" label)
     ; (when (noob user)
     ;  (toplink "welcome" welcome-url* label))
-    (toplink "new" "newest" label)
+    (toplink "最近的" "newest" label)
     ;(when user
     ;  (toplink "threads" (threads-url user) label))
-    (toplink "comments" "newcomments" label)
+    (toplink "评论" "newcomments" label)
     ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
-    (link "submit")
+    (link "提交")
     (unless (mem label toplabels*)
       (fontcolor white (pr label)))))
 
@@ -640,7 +640,7 @@ function vote(node) {
       (when-umatch/r user req
         (logout-user user)
         whence))
-    (onlink "join"
+    (onlink "注册/登录"
       (login-page nil
                   (list (fn (u ip)
                           (ensure-news-user u)
