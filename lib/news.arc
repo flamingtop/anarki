@@ -622,7 +622,7 @@ function vote(node) {
     (toplink "评论" "newcomments" (if (is label "comments") "评论" label))
     ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
-    (link "提交" "submit")
+    (link "提交链接" "submit")
     (unless (mem label toplabels*)
       (fontcolor white (pr label)))))
 
