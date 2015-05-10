@@ -826,19 +826,58 @@ function vote(node) {
 
 (newsop about ()
   (pr "
-    <div
-      style=\"
-              position: relative;
-              top: 50%;
-              transform: translateY(-50%);
-              text-align: center;
-              font-family: Courier, serif;
-            \">
-    <center>
-    <h3>Being Chinese.</h3>
-    <p>contact[at]warmgogo.com</p>
-    </center>
+    <!doctype html>
+    <html>
+    <style type=\"text/css\">
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .hero {
+        display: table;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        font-family: Courier, serif;
+      }
+      .content {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .hero.start {
+        background: url(/photos/mei.png) -49px 10% no-repeat;
+      }
+    </style>
+    <body>
+
+    <div class=\"hero start\"></div>
+
+    <div class=\"hero\">
+      <div class=\"content\">
+      <div><img src=\"/photos/yanzi.png\" /></div>
+      <h1>Being Chinese, around the globe</h1>
+      <p>contact[at]warmgogo.com</p>
+      </div>
     </div>
+
+    <div class=\"hero\">
+      <div class=\"content\">    
+      <iframe
+        width=\"640\"
+        height=\"480\"
+        src=\"https://www.youtube-nocookie.com/embed/oX6rZ5qGq3c?rel=0&amp;controls=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class=\"hero\">
+      <div class=\"content\">
+      </div>
+    </div>
+
+
+    </body>
+    </html>
     "))
 
 
@@ -1456,7 +1495,7 @@ function vote(node) {
 
 (def submit-page (user (o url) (o title) (o showtext) (o text "") (o msg)
                        (o req)) ; unused
-  (minipage "Submit"
+  (minipage "提交链接"
     (pagemessage msg)
     (urform user req
             (process-story (get-user req)
@@ -1466,23 +1505,27 @@ function vote(node) {
                            (and showtext (md-from-form (arg req "x") t))
                            req!ip)
       (tab
-        (row "title"  (input "t" title 50))
+        (row "标题"  (input "t" title 50))
+        (spacerow 20)
         (if prefer-url*
-          (do (row "url" (input "u" url 50))
+          (do (row "链接" (input "u" url 50))
               (when showtext
-                (row "" "<b>or</b>")
-                (row "text" (textarea "x" 4 50 (only.pr text)))))
-          (do (row "text" (textarea "x" 4 50 (only.pr text)))
-              (row "" "<b>or</b>")
-              (row "url" (input "u" url 50))))
-        (row "" (submit))
+                (row "" "<b>或者</b>")
+                (row "描述" (textarea "x" 4 50 (only.pr text)))))
+          (do (row "描述" (textarea "x" 4 50 (only.pr text)))
+              (row "" "<b>或者</b>")
+              (row "链接" (input "u" url 50))))
+        (row "" (submit "提交"))
         (spacerow 20)
         (row "" submit-instructions*)))))
 
 (= submit-instructions*
-   "Leave url blank to submit a question for discussion. If there is
-    no url, the text (if any) will appear at the top of the comments
-    page. If there is a url, the text will be ignored.")
+   "
+   <ol>
+   <li>请使用可靠消息来源</li>
+   <li>非公共领域涉及他人隐私的内容可能会被管理员清理，恕不另行告知</li>
+   </ol>
+   ")
 
 ; For use by outside code like bookmarklet.
 ; http://news.domain.com/submitlink?u=http://foo.com&t=Foo
