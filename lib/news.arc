@@ -13,6 +13,11 @@
    border-color* (color 0 0 0)
    prefer-url*   t)
 
+(= cnzz* "<div style=\"display:none\">
+              <script
+                src=\"http://s4.cnzz.com/z_stat.php?id=1254861010&web_id=1254861010\"
+                language=\"JavaScript\"></script></div>")
+
 ; these settings might improve performance when you need it
 
 ;(= static-max-age* 7200)    ; browsers can cache static files for 7200 sec
@@ -406,11 +411,7 @@
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
-         (pr "<div
-                style=\"display:none\">
-              <script
-                src=\"http://s4.cnzz.com/z_stat.php?id=1254861010&web_id=1254861010\"
-                language=\"JavaScript\"></script></div>")
+         (pr cnzz*)
          ))))
 
 (= pagefns* nil)
@@ -873,12 +874,10 @@ function vote(node) {
     <div class=\"hero\">
       <div class=\"content\">
       </div>
-    </div>
+    </div>")
+    (pr cnzz*)    
+    (pr "</body></html>"))
 
-
-    </body>
-    </html>
-    "))
 
 
 ; Main Operators
