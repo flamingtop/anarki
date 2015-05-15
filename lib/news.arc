@@ -408,10 +408,12 @@
        (tag title (pr ,title)))
      (tag body
        (center
+         (pr "这里很多内容需要微劈嗯访问，否则请勿浪费过多时间；")
+         (pr "请发送链接的时候避免标题错别字，以免引起误解。 <hr />")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
-         (pr "许多内容需要微劈嗯，否则请不必浪费过多时间，如果你正在寻找好的喂啤恩<br />")
+         (pr "如果你正在寻找好的喂啤恩<br />")
          (pr "<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">12微劈嗯</a>的产品对Big Land的访问有优化<br />")
          (pr "我们使用物美价廉的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a>")
          (pr cnzz*)
@@ -483,7 +485,9 @@
   font-family: \"Georgia\", \"Xin Gothic\", \"Hiragino Sans GB\", \"Droid Sans Fallback\", \"Microsoft YaHei\", sans-serif;
   letter-spacing: 1px;
 }
-body  { font-size:10pt; color:#828282; }
+body  { font-size:10pt; color:#828282; background: url(/photos/mei.png) 107% 300px no-repeat; }
+
+table { background: transparent; }
 td    { font-size:10pt; color:#828282; }
 
 .admin td   { font-size:8.5pt; color:#000000; }
@@ -849,13 +853,8 @@ function vote(node) {
         vertical-align: middle;
       }
 
-      .hero.start {
-        background: url(/photos/mei.png) -49px 10% no-repeat;
-      }
     </style>
     <body>
-
-    <div class=\"hero start\"></div>
 
     <div class=\"hero\">
       <div class=\"content\">
@@ -865,14 +864,6 @@ function vote(node) {
       </div>
     </div>
 
-    <div class=\"hero\">
-      <div class=\"content\">    
-      <iframe
-        width=\"640\"
-        height=\"480\"
-        src=\"https://www.youtube-nocookie.com/embed/oX6rZ5qGq3c?rel=0&amp;controls=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>
-      </div>
-    </div>
 
     <div class=\"hero\">
       <div class=\"content\">
