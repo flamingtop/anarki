@@ -484,7 +484,7 @@
   font-family: \"Georgia\", \"Xin Gothic\", \"Hiragino Sans GB\", \"Droid Sans Fallback\", \"Microsoft YaHei\", sans-serif;
   letter-spacing: 1px;
 }
-body  { font-size:10pt; color:#828282; background: url(/photos/mei.png) 107% 500px no-repeat; }
+body  { font-size:10pt; color:#828282; background: url(/photos/mei.png) 112% 500px no-repeat; }
 
 table { background: transparent; }
 td    { font-size:10pt; color:#828282; }
