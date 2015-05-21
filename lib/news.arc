@@ -408,7 +408,7 @@
        (tag title (pr ,title)))
      (tag body
        (center
-         (pr "<div style=\"height:49px;\">访客若无威劈恩，请勿浪费过多时间；欢迎注册提交有价值链接。 </div>")
+         (pr "<div style=\"height:49px;\">访客若无威劈恩，请勿浪费过多时间<br />无论你在哪里，都可以注册提交有价值链接 </div>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
