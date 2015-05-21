@@ -408,7 +408,7 @@
        (tag title (pr ,title)))
      (tag body
        (center
-         (pr "<div style=\"height:100px;\">这里很多内容需要微劈嗯访问，否则请勿浪费过多时间；请发送链接的时候避免标题错别字，以免引起误解。 </div>")
+         (pr "<div style=\"height:49px;\">访客若无威劈恩，请勿浪费过多时间；欢迎注册提交有价值链接。 </div>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
