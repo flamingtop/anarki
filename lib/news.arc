@@ -858,7 +858,7 @@ function vote(node) {
     <div class=\"hero\">
       <div class=\"content\">
       <div><img src=\"/photos/yanzi.png\" /></div>
-      <h1>Being Chinese, around the globe</h1>
+      <h3>如今他们在全世界 / 重新找回 / 自己的身份</h3>
       <p>contact[at]warmgogo.com</p>
       </div>
     </div>
