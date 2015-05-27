@@ -408,13 +408,13 @@
        (tag title (pr ,title)))
      (tag body
        (center
-         (pr "<div style=\"height:50px;\">这里很多内容需要微劈嗯访问，否则请勿浪费过多时间。</div>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
          (pr "如果你正在寻找好的喂啤恩<br />")
          (pr "<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">12微劈嗯</a>的产品对Big Land的访问有优化<br />")
-         (pr "我们使用物美价廉的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a>")
+         (pr "我们使用物美价廉的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a><br />")
+         (pr "<img src=\"/photos/yanzi.png\" /><br />")
          (pr cnzz*)
          ))))
 
