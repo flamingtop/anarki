@@ -613,7 +613,7 @@ More convenient form of [[coerce]] with arguments reversed; doesn't need
   ($.exact->inexact x))
 
 (def string args
-"Converts all 'args' into strings and concatenate the result."
+"Converts all 'args' into strings and concatenates the results."
   (apply + "" (map [coerce _ 'string] args)))
 
 ; Possible to write map without map1, but makes News 3x slower.
@@ -2680,14 +2680,15 @@ when it's ready to be interrupted."
 "Applies each function in 'fs' to 'x', letting the functions recurse on parts
 of 'x' by calling 'self'."
   (w/uniq g
-    `(loop (,g ,x)
-       (when ,g
-         ,@(map [list _ g] fs)))))
+    `((afn (,g)
+        (when ,g
+          ,@(map [list _ g] fs)))
+      ,x)))
 
 (examples trav
   (accum acc
     (trav '(1 2 3 4) [acc _]
-                     [recur cdr._]))
+                     [self cdr._]))
   ((1 2 3 4)
    (2 3 4)
    (3 4)
