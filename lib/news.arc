@@ -489,12 +489,12 @@ body  {
   background-color: transparent;
   background-image: url(/photos/mei.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: 680px 500px;
 }
 
 @@media (min-width: 1280px) {
   body {
+    background-attachment: fixed;
     background-position: right bottom;
   }
 }
