@@ -411,11 +411,12 @@
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
+         (pr "<div class=\"footer\"><small>")
          (pr "访客若无威霹恩，请勿浪费过多时间<br />")
-         (pr "您若正在寻找好的威霹恩<br />")
-         (pr "<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">12微劈嗯</a>的产品对Big Land的访问有优化<br />")
-         (pr "我们使用物美价廉的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a><br />")
+         (pr "<i><a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">12微劈嗯</a></i><br />")
+         (pr "<i><a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a></i><br />")
          (pr cnzz*)
+         (pr "</small></div>")
          ))))
 
 (= pagefns* nil)
@@ -485,7 +486,6 @@
 }
 
 body  {
-  font-size: 12px;
   background-color: transparent;
   background-image: url(/photos/mei.png);
   background-repeat: no-repeat;
@@ -515,12 +515,12 @@ a:link    { color:#000000; text-decoration:none; }
 a:visited { color:#666666; text-decoration:none; }
 
 .default { font-size: 10pt; color:#000000; }
-.admin   { font-size:8.5pt; color:#000000; }
-.title   { font-size: 13pt; }
+.admin   { font-size: 9pt; color:#000000; }
+.title   { font-size: 11pt; }
 .adtitle { font-size:  9pt; color:#828282; }
 .subtext { font-size:  7pt; color:#828282; }
 .yclinks { font-size:  8pt; color:#828282; }
-.pagetop { font-size: 11pt; color:#000000; }
+.pagetop { font-size: 10pt; color:#000000; }
 .comhead { font-size:  8pt; color:#828282; }
 .comment { font-size:  9pt; }
 .dead    { font-size:  9pt; color:#dddddd; }
@@ -866,7 +866,6 @@ function vote(node) {
         display: table-cell;
         vertical-align: middle;
       }
-
     </style>
     <body>
 
@@ -1058,7 +1057,8 @@ function vote(node) {
 
 (def display-item-number (i)
   (when i (tag (td align 'right valign 'top class 'title)
-            (pr i "."))))
+            ; (pr i ".")
+            (pr ""))))
 
 (= follow-threshold* 5)
 
