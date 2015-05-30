@@ -490,7 +490,7 @@ body  {
   background-image: url(/photos/mei.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 680px bottom;
+  background-position: 680px 500px;
 }
 
 @@media (min-width: 1280px) {
