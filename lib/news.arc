@@ -479,12 +479,27 @@
 
 (defop news.css req
   (pr "
-* { font-family: \"Lucida Grande\",\"Lucida Sans Unicode\",Helvetica,Arial,Verdana,sans-serif; }
 * {
   font-family: \"Georgia\", \"Xin Gothic\", \"Hiragino Sans GB\", \"Droid Sans Fallback\", \"Microsoft YaHei\", sans-serif;
   letter-spacing: 1px;
 }
-body  { font-size:10pt; color:#828282; background: url(/photos/mei.png) 152% 500px no-repeat; }
+
+body  {
+  font-size: 12px;
+  background-color: transparent;
+  background-image: url(/photos/mei.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 680px bottom;
+}
+
+@@media (min-width: 1280px) {
+  body {
+    background-position: right bottom;
+  }
+}
+
+
 
 table { background: transparent; }
 td    { font-size:10pt; color:#828282; }
