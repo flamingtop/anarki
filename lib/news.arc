@@ -1206,9 +1206,9 @@ function vote(node) {
     (byline i user)))
 
 (def itemscore (i (o user))
-  ;(tag (span id (+ "score_" i!id))
-  ;  (pr (plural (if (is i!type 'pollopt) (realscore i) i!score)
-  ;              "point")))
+  (tag (span id (+ "score_" i!id))
+    (pr (plural (if (is i!type 'pollopt) (realscore i) i!score)
+                "point")))
   (hook 'itemscore i user))
 
 (def byline (i user)
