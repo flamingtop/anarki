@@ -641,7 +641,7 @@ function vote(node) {
     (toplink "最近" "newest" (if (is label "new") "最近" label))
     ;(when user
     ;  (toplink "threads" (threads-url user) label))
-    (toplink "评论" "newcomments" (if (is label "comments") "评论" label))
+    ; (toplink "评论" "newcomments" (if (is label "comments") "评论" label))
     ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
     (link "提交链接" "submit")
@@ -872,7 +872,7 @@ function vote(node) {
     <div class=\"hero\">
       <div class=\"content\">
       <div><img src=\"/photos/yanzi.png\" /></div>
-      <h3>如今他们在全世界 / 重新找回 / 自己的身份</h3>
+      <h3>如今他们在全世界, 重新找回自己的身份</h3>
       <p>contact[at]warmgogo.com</p>
       </div>
     </div>
@@ -891,7 +891,7 @@ function vote(node) {
 
 ; remember to set caching to 0 when testing non-logged-in
 
-(= caching* 1 perpage* 30 threads-perpage* 10 maxend* 210)
+(= caching* 1 perpage* 50 threads-perpage* 10 maxend* 1000000)
 
 ; Limiting that newscache can't take any arguments except the user.
 ; To allow other arguments, would have to turn the cache from a single
@@ -1147,7 +1147,8 @@ function vote(node) {
           onclick (if user "return vote(this)")
           href    (vote-url user i dir whence))
     (if (is dir 'up)
-      (out (gentag img src up-url*   border 0 vspace 3 hspace 2))
+      ;(out (gentag img src up-url*   border 0 vspace 3 hspace 2))
+      (out (pr "<span style=\"color:#eee\">＋&nbsp;</span>"))
       (out (gentag img src down-url* border 0 vspace 3 hspace 2)))))
 
 (def vote-url (user i dir whence)
@@ -1205,9 +1206,9 @@ function vote(node) {
     (byline i user)))
 
 (def itemscore (i (o user))
-  (tag (span id (+ "score_" i!id))
-    (pr (plural (if (is i!type 'pollopt) (realscore i) i!score)
-                "point")))
+  ;(tag (span id (+ "score_" i!id))
+  ;  (pr (plural (if (is i!type 'pollopt) (realscore i) i!score)
+  ;              "point")))
   (hook 'itemscore i user))
 
 (def byline (i user)
