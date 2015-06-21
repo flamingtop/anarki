@@ -408,15 +408,13 @@
        (tag title (pr ,title)))
      (tag body
        (center
+         (pr "<p style=\"background:#000;color:#fff;margin:10%;\">我们欢迎中文公共领域新闻链接，任何人都可以注册提交；请勿提交猜测、干涉任何个人私生活的链接，谢谢。</p>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
-         (pr "<div class=\"footer\"><small>")
-         (pr "访客若无威霹恩，请勿浪费过多时间<br />")
-         (pr "<i><a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">12微劈嗯</a></i><br />")
-         (pr "<i><a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a></i><br />")
+         (pr "<p>访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">威霹恩</a>，请勿浪费过多时间。</p>")
+         (pr "<p>本站架设在位于旧金山的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a></p>")
          (pr cnzz*)
-         (pr "</small></div>")
          ))))
 
 (= pagefns* nil)
@@ -494,8 +492,7 @@ body  {
 
 @@media (min-width: 1280px) {
   body {
-    background-attachment: fixed;
-    background-position: right bottom;
+    background-position: right 500px;
   }
 }
 
