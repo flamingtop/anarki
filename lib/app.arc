@@ -190,7 +190,8 @@ Returns nil if no logged-in user."
           (fn ()
             (inputs u username 20 nil
                     p password 20 nil
-                    e email 20 nil)
+                    ; e email 20 nil
+                    )
             (br)
             (submit "signup"))
           (acons afterward)))
@@ -302,8 +303,8 @@ Returns nil if no logged-in user."
       (or (no pw) (len< pw 4))
        "Passwords should be a least 4 characters long.  Please
         choose another."
-      (or (no email) (len< email 6))
-       "Please provide an email, in case you need your password emailed to you."
+      ; (or (no email) (len< email 6))
+      ;  "Please provide an email, in case you need your password emailed to you."
        nil))
 
 (def goodname (str (o min 1) (o max nil))
