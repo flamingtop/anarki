@@ -408,7 +408,7 @@
        (tag title (pr ,title)))
      (tag body
        (center
-         (pr "<p style=\"background:#000;color:#fff;margin:10%;\">我们不欢迎猜测、猎奇、消费个人私生活的内容，谢谢。</p>")
+         (pr "<p style=\"background:#000;color:#fff;margin:10%;\">任何人都可以注册提交世界中（英）文公共领域新闻；请勿提交猜测、猎奇、消费他人私生活的内容，谢谢。</p>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
