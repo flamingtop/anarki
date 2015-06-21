@@ -408,15 +408,13 @@
        (tag title (pr ,title)))
      (tag body
        (center
+         (pr "<p style=\"margin:10%;\">任何人都可以注册提交世界中（英）文公共领域新闻；请勿提交猜测、猎奇、消费他人私生活的内容，谢谢。</p>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
-         (pr "<div class=\"footer\"><small>")
-         (pr "访客若无威霹恩，请勿浪费过多时间<br />")
-         (pr "<i><a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">12微劈嗯</a></i><br />")
-         (pr "<i><a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a></i><br />")
+         (pr "<p>访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">威霹恩</a>，请勿浪费过多时间。</p>")
+         (pr "<p>本站架设在位于旧金山的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a></p>")
          (pr cnzz*)
-         (pr "</small></div>")
          ))))
 
 (= pagefns* nil)
@@ -494,8 +492,7 @@ body  {
 
 @@media (min-width: 1280px) {
   body {
-    background-attachment: fixed;
-    background-position: right bottom;
+    background-position: right 500px;
   }
 }
 
@@ -641,7 +638,7 @@ function vote(node) {
     (toplink "最近" "newest" (if (is label "new") "最近" label))
     ;(when user
     ;  (toplink "threads" (threads-url user) label))
-    (toplink "评论" "newcomments" (if (is label "comments") "评论" label))
+    ; (toplink "评论" "newcomments" (if (is label "comments") "评论" label))
     ; (toplink "leaders"  "leaders"     label)
     (hook 'toprow user label)
     (link "提交链接" "submit")
@@ -872,7 +869,7 @@ function vote(node) {
     <div class=\"hero\">
       <div class=\"content\">
       <div><img src=\"/photos/yanzi.png\" /></div>
-      <h3>如今他们在全世界 / 重新找回 / 自己的身份</h3>
+      <h3>如今他们在全世界, 重新找回自己的身份</h3>
       <p>contact[at]warmgogo.com</p>
       </div>
     </div>
@@ -1147,7 +1144,8 @@ function vote(node) {
           onclick (if user "return vote(this)")
           href    (vote-url user i dir whence))
     (if (is dir 'up)
-      (out (gentag img src up-url*   border 0 vspace 3 hspace 2))
+      ;(out (gentag img src up-url*   border 0 vspace 3 hspace 2))
+      (out (pr "<span style=\"color:#eee\">＋&nbsp;</span>"))
       (out (gentag img src down-url* border 0 vspace 3 hspace 2)))))
 
 (def vote-url (user i dir whence)
