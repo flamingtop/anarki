@@ -20,7 +20,7 @@
 
 ; these settings might improve performance when you need it
 
-;(= static-max-age* 7200)    ; browsers can cache static files for 7200 sec
+(= static-max-age* (* 3600 24 7))    ; browsers can cache static files for 7200 sec
 
 ;(declare 'direct-calls t)   ; you promise not to redefine fns as tables
 
