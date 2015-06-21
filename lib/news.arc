@@ -413,10 +413,10 @@
                      bgcolor sand)
            ,@body)
          (pr "<div style=\"font-size:small\">")
-         (pr 访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">威霹恩</a>，请勿浪费过多时间。<br />")
+         (pr "访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">威霹恩</a>，请勿浪费过多时间。<br />")
          (pr "本站架设在位于旧金山的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a><br />")
          (pr "contact[at]warmgogo.com<br />")
-         (pr "</div>")         
+         (pr "</div>")
          (pr cnzz*)
          ))))
 
