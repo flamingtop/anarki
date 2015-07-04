@@ -408,13 +408,14 @@
        (tag title (pr ,title)))
      (tag body
        (center
-         (pr "<p style=\"background:#000;color:#fff;margin:5%;\">请勿提交涉及他人私生活的内容，谢谢。</p>")
+         (pr "<p style=\"margin:5%;\">")
+         (pr "访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">威霹恩</a>，请勿浪费过多时间<br />")
+         (pr "本站架设在位于旧金山的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a>")
+         (pr "</p>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
          (pr "<div style=\"font-size:small;margin:10%\">")
-         (pr "访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\">威霹恩</a>，请勿浪费过多时间<br />")
-         (pr "本站架设在位于旧金山的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\">数字海洋主机</a><br />")
          (pr "网站内容如有侵权，请告知<br />")
          (pr "contact[at]warmgogo.com<br />")
          (pr "</div>")
