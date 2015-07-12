@@ -411,7 +411,7 @@
          (pr "<p style=\"margin:2%;\">")
          (pr "访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\"><u>威霹恩</u></a>，请勿浪费过多时间<br />")
          (pr "</p>")
-         (pr "<p><a href=\"http://www.amazon.cn/gp/product/B00XTI1AAY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00XTI1AAY&linkCode=as2&tag=flamingtop-23\">说中国:一个不断变化的复杂共同体</a></p>")
+         (pr "<p><a href=\"http://www.amazon.cn/gp/product/B00XTI1AAY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00XTI1AAY&linkCode=as2&tag=flamingtop-23\"><img src=\"http://ec4.images-amazon.com/images/I/41l7lDzMiRL.jpg\" rel=\"nofollow\" /></a></p>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
