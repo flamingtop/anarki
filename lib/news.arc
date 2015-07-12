@@ -493,12 +493,12 @@ body  {
   background-color: transparent;
   background-image: url(/photos/mei.png);
   background-repeat: no-repeat;
-  background-position: 680px 500px;
+  background-position: 680px 1280px;
 }
 
 @@media (min-width: 1280px) {
   body {
-    background-position: right 500px;
+    background-position: right 1280px;
   }
 }
 
