@@ -411,7 +411,7 @@
          (pr "<p style=\"margin:2%;\">")
          (pr "访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\"><u>威霹恩</u></a>，请勿浪费过多时间<br />")
          (pr "</p>")
-         (pr "<p><a target=\"__blank\" title=\"中国人的修养\" href=\"http://www.amazon.cn/gp/product/B00AZ0BXYM/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00AZ0BXYM&linkCode=as2&tag=itlr-23\"><img width=\"50%\" src=\"http://ec4.images-amazon.com/images/I/71aXq4zXHZL.jpg\" /></a></p>")
+         (pr "<p><a target=\"__blank\" title=\"中国人的修养\" href=\"http://www.amazon.cn/gp/product/B00AZ0BXYM/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00AZ0BXYM&linkCode=as2&tag=itlr-23\"><img width=\"20%\" src=\"http://ec4.images-amazon.com/images/I/71aXq4zXHZL.jpg\" /></a></p>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
