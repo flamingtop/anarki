@@ -416,7 +416,7 @@
          (pr "&nbsp;")
          (pr "<a target=\"__blank\" title=\"共识与冲突\" href=\"http://www.amazon.cn/gp/product/B005PKSR5U/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B005PKSR5U&linkCode=as2&tag=flamingtop-23\"><img width=\"20%\" src=\"http://ec4.images-amazon.com/images/I/41gMLP11FbL.jpg\" /></a>")
          (pr "&nbsp;")
-         (pr "<a target=\“__blank\” title=\”海外史料看甲午\” href=\”http://www.amazon.cn/gp/product/B00XJ0UO2C/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00XJ0UO2C&linkCode=as2&tag=flamingtop-23\”><img width=\”20%\” src=\”http://ec4.images-amazon.com/images/I/71AUB1dr5wL.jpg\” /></a>")
+         (pr "<a target=\"__blank\" title=\"海外史料看甲午\" href=\"http://www.amazon.cn/gp/product/B00XJ0UO2C/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00XJ0UO2C&linkCode=as2&tag=flamingtop-23\"><img width=\"20%\" src=\"http://ec4.images-amazon.com/images/I/71AUB1dr5wL.jpg\" /></a>")
          (pr "</p>")
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
