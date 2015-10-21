@@ -498,7 +498,7 @@ body  {
   background-color: transparent;
   background-image: url(/photos/mei.png);
   background-repeat: no-repeat;
-  background-position: 580px 1280px;
+  background-position: 680px 780px;
 }
 
 @@media (min-width: 1280px) {
@@ -1156,7 +1156,7 @@ function vote(node) {
           href    (vote-url user i dir whence))
     (if (is dir 'up)
       ;(out (gentag img src up-url*   border 0 vspace 3 hspace 2))
-      (out (pr "<span style=\"color:#eee\">＋&nbsp;</span>"))
+      (out (pr "<span style=\"color:#999\">＋&nbsp;</span>"))
       (out (gentag img src down-url* border 0 vspace 3 hspace 2)))))
 
 (def vote-url (user i dir whence)
