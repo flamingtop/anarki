@@ -408,19 +408,19 @@
        (tag title (pr ,title)))
      (tag body
        (center
+         (pr "<div style=\" margin:2%\"")
+         (pr "你好，这里每天常客约三十位，是全球最大的中文网站。<br />")
+         (pr "全球华人的参与是最好的鼓励，每天删除他们贡献的内容时，我们内心是感恩的。")
+         (pr "</div>")
+
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
            ,@body)
          
-         (pr "<div style=\"font-size: small; margin:10%\"")
-         (pr "你好，这里每天常客约三十位。")
-         (pr "</div>")
          
-         (pr "<p style=\"margin:2%;\">")
-         (pr "访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\"><u>威霹恩</u></a>，请勿浪费过多时间<br />")
-         (pr "</p>")
-         
+
          (pr "<div style=\"font-size:small;margin:10%\">")
+         (pr "访客若无<a href=\"https://my.anuson.com/aff.php?aff=810&redirect=https://getsetupfile.com/\" target=\"__blank\"><u>威霹恩</u></a>，请勿浪费过多时间<br />")
          (pr "本站架设在位于旧金山的<a href=\"https://www.digitalocean.com/?refcode=c260f0b56c75\" target=\"__blank\"><u>数字海洋主机</u></a><br />")
          (pr "网站内容如有侵权，请告知<br />")
          (pr "contact[at]warmgogo.com<br />")
