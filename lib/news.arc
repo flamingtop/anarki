@@ -503,7 +503,7 @@ body  {
 
 @@media (min-width: 1280px) {
   body {
-    background-position: right 1280px;
+    background-position: right 780px;
   }
 }
 
