@@ -408,10 +408,6 @@
        (tag title (pr ,title)))
      (tag body
        (center
-         (pr "<div style=\" margin:2%\">")
-         (pr "你好，这里每天常客约三十位，是全球最大的中文网站。<br />")
-         (pr "全球华人的参与是最好的鼓励，每天删除他们贡献的内容时，我们内心是感恩的。")
-         (pr "</div>")
 
          (tag (table border 0 cellpadding 0 cellspacing 0 width "85%"
                      bgcolor sand)
